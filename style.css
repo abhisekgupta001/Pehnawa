@@ -1,0 +1,242 @@
+@import url(./public/css/utilities.css);
+
+/* ------------------hero banner stylng------------ */
+
+.hero-banner{
+    background:var(--navbar-bg-color);
+    color: var(--white);
+    font-family: var(--poppins);
+    /* height: calc(80vh - 60px); */
+}
+
+.hero-banner-inner-container{
+    gap: 2rem;
+}
+
+.banner-left-section{
+    /* flex-basis: 100%; */
+    width: 50%;
+    justify-content: space-around;
+    align-items:flex-start;
+    gap: .5rem;
+    margin: 2rem 0;
+}
+.banner-left-section .para-5{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    align-self: flex-start;
+    margin-bottom: 1rem;
+}
+.banner-left-section .heading-3{
+    font-family: var(--aguafina);
+    /* text-transform: uppercase; */
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: .25rem;
+    font-weight: 600;
+   
+}
+
+.banner-left-section .heading-1{
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 700;
+}
+.banner-left-section .btn{
+    border: 2px solid var(--white);
+    background: var(--white);
+    color: var(--navbar-bg-color);
+    border-radius: 2rem;
+    margin-top: 2rem;
+}
+.banner-left-section .btn:hover{
+    border: 2px solid var(--white);
+    background-color: transparent;
+    color: var(--white);
+}
+
+.banner-right-section{
+    width: 50%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-start;    
+    align-items: flex-end;
+
+}
+.hero-image{
+    width: 100%;
+    height: auto;
+}
+
+/* ------------------gender card stylng------------ */
+.gender-cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.gender-card{
+    display: grid;
+    grid-template-rows: 250px;
+    align-items: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.gender-card:hover {
+  opacity: .8;
+}
+
+.card-women{
+    background-image: linear-gradient(180deg, rgba(22, 21, 21,.9),rgba(22, 21, 21,.1)), url(./public/images/women.jpg);
+}
+.card-women > h2{
+    text-align: right;
+    margin-right: 1rem;
+}
+.card-new-arrival{
+    background-image: linear-gradient(180deg, rgba(22, 21, 21,.9),rgba(22, 21, 21,.1)), url(./public/images/new_arrival.jpg);
+}
+.card-new-arrival > h2{
+    text-align: center;
+}
+.card-men{
+    background-image: linear-gradient(180deg, rgba(22, 21, 21,.9),rgba(22, 21, 21,.1)), url(./public/images/men.jpg);
+}
+.card-men > h2{
+    text-align: left;
+    margin-left: 1rem;
+}
+/* -------------------Category section------------------*/
+.category-container{
+    margin-top: 3rem;
+    text-align: center;
+}
+.category-card-container{
+    margin:1rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 150px;
+    gap: 1rem;
+
+}
+
+.card{
+  
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.card:hover{
+    opacity: .8;
+}
+.card p{
+    width: 100%;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    background:rgba(255,255,255,.8);
+    padding: .5rem 0;
+
+   
+}
+.card-shirt{
+    background-image: linear-gradient(180deg, rgba(22, 21, 21,.1),rgba(22, 21, 21,.1)), url(./public/images/shirt.jpg);
+}
+
+.card-tshirt{
+    background-image: linear-gradient(180deg, rgba(22, 21, 21,.1),rgba(22, 21, 21,.1)), url(./public/images/t-shirt.jpg);
+}
+
+.card-jean{
+    background-image: linear-gradient(180deg, rgba(22, 21, 21,.1),rgba(22, 21, 21,.1)), url(./public/images/jeans.jpg);
+}
+
+.card-wallet{
+    background-image: linear-gradient(180deg, rgba(22, 21, 21,.1),rgba(22, 21, 21,.1)), url(./public/images/wallet.jpg);
+}
+
+.card-shoe{
+    background-image: linear-gradient(180deg, rgba(22, 21, 21,.1),rgba(22, 21, 21,.1)), url(./public/images/shoes.jpg);
+}
+/* -------------------Offer card styling------------------ */
+.offer-section{
+    margin-top: 3rem;
+    text-align: center;
+    background-image: url(./public/images/backround\ for\ banner\ secttions\ and\ sop\ page.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem 0;
+}
+
+.offer-card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-template-rows: 200px;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.offer-card{
+    background:rgba(255,255,255,.8); 
+    justify-content: center;
+}
+.section-heading{
+    font-family: var(--aguafina);
+}
+
+
+
+
+
+
+
+
+
+/* -------------------Media queries------------------ */
+
+@media screen and (max-width:950px){
+    .banner-right-section{
+        width: 70%;
+    }
+    .banner-left-section{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:650px){
+    .html{
+        font-size: 10px;
+    }
+    .hero-banner-inner-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-right-section{
+        width: 100%;
+    }
+    .banner-left-section{
+        align-self: center;
+        width: 100%;
+        align-items: center;
+        gap: 1rem;
+    }
+    .banner-left-section .para-5{
+        align-self: center;
+    }
+    .nav-items{
+        display: none;
+    }
+}
+
+@media screen and (max-width:520px){
+    .banner-left-section .heading-3{
+        font-size: 3rem;
+    }
+    .banner-left-section .heading-1{
+        font-size: 4rem;
+    }
+}
