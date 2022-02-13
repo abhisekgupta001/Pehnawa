@@ -43,4 +43,6 @@
 
 .section-heading{
     color: var(--navbar-bg-color);
+    font-family: var(--aguafina);
 }
+
