@@ -1,0 +1,138 @@
+@import url(../../../style.css);
+
+.cart-section-container{
+    min-height: 90vh; 
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.cart-section-header
+{
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+
+.quantity-card-container{
+    gap: 3rem;
+    justify-content: center;
+}
+
+.product-card-hor{
+    background-color:var(--white);
+    box-shadow: var(--shadow);
+    gap: 1rem;
+    padding: .5rem;
+}
+
+.product-card-hor .card-img-wrapper{
+    width: 40%; 
+    overflow: hidden;
+     
+}
+.product-card-hor .card-img-wrapper img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.product-card-hor .card-details-wrapper{
+    flex: 1;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: .75rem;
+
+   
+}
+
+.product-card-hor .card-title{
+    font-size: 1rem;
+}
+
+.quantity-input-wrapper .quantity-input{
+    width: 3rem;
+    border: 1px solid var(--navbar-bg-color);
+    padding: .25rem .25rem;
+    color: var(--navbar-bg-color);
+    background-color: transparent;
+}
+
+.quantity-input-wrapper > label {
+    justify-content: space-around;
+    gap: .5rem;
+}
+.quantity-input-wrapper > label .bx{
+    font-size: 1rem;
+}
+.quantity-input-wrapper > label .bx:hover{
+    color: var(--gray-600);
+}
+
+.product-card-hor .card-btns{
+    align-self: stretch;
+    gap: .5rem;
+}
+.product-card-hor .btn,
+.btn-place-order{
+    align-self: center;
+    width: 90%;
+    font-size: .75rem;
+    padding: .25rem .5rem;
+    border-radius: 0;
+    border: 1px solid var(--navbar-bg-color);
+}
+.product-card-hor .btn:hover{
+    opacity: .8;
+}
+
+.btn-remove-from-cart{
+    background-color: var(--navbar-bg-color);
+    color: var(--white);
+}
+
+.btn-move-to-wishlist{
+    color: var(--navbar-bg-color);
+    background-color: var(--white);
+}
+
+.price-card{
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+    align-items: stretch;
+    box-shadow: var(--shadow);
+}
+
+.price-card .price-wrapper div, .total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-detail, .total, .price-wrapper{
+    border-bottom: 1px solid var(--navbar-bg-color);
+}
+
+.btn-place-order{
+    background-color: var(--navbar-bg-color);
+    color: var(--white);
+    padding: .5rem 1rem;
+}
+
+.btn-place-order:hover{
+    opacity: .7;
+    transform: scale(1.1);
+}
+
+
+
+/* -------Removing arrow from input type number ------ */
+/* Chrome, Safari, Edge, Opera */
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.quantity-input {
+  -moz-appearance: textfield;
+}
