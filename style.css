@@ -7,6 +7,18 @@
     --linear-gradient-bg-light: linear-gradient(180deg, rgba(22, 21, 21,.1),rgba(22, 21, 21,.1));
 }
 
+.profile-icon{
+    position: relative;
+}
+
+.card-input-signup{
+    position: absolute;
+
+    background-color: aqua;
+    border: 1px salmon;
+}
+
+
 /* ------------------hero banner stylng------------ */
 
 .hero-banner{
