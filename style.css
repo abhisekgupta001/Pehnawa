@@ -1,4 +1,7 @@
 @import url(./public/css/utilities.css);
+@import url(./public/pages/product/product.css);
+@import url(./public/pages/cart/cart.css);
+@import url(./public/pages/wishlist/wishlist.css);
 
 :root{
     --light-background:rgba(255,255,255,.8); 
