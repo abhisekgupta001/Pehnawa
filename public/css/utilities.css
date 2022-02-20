@@ -13,6 +13,19 @@
     margin: 0 auto;
 
 }
+
+.login-card-container,
+.signup-card-container{
+    min-height: 90vh;
+    display: grid;
+    place-items: center;
+    
+    background-color: #ffffff;
+    opacity: 0.9;
+    background-image: radial-gradient(#161515 0.55px, #ffffff 0.55px);
+    background-size: 11px 11px;
+}
+
 .flex-row-nowrap{
     display: flex;
     flex-flow: row nowrap;
