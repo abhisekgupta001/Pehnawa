@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pehnawa | Login</title>
+    <title>Pehnawa | Signup</title>
 
     <!-- =====================MAIN CSS FILE for EACH COMPONENTS================ -->
     <link
@@ -17,7 +17,7 @@
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="../login/login.css" />
   </head>
   <body>
     <!-- ======================Navigation Bar================ -->
@@ -59,7 +59,7 @@
 
     <section class="login-card-container outer-container">
       <div class="login-card flex-column-nowrap">
-        <h3 class="heading-3">Login</h3>
+        <h3 class="heading-3">Signup</h3>
         <form class="login-form flex-column-nowrap">
           <div class="flex-column-nowrap input-wrapper">
             <label for="login-email">Email address</label>
@@ -70,12 +70,15 @@
             <input type="password" id="login-password" required />
           </div>
           <div class="flex-row-nowrap remember-wrapper">
-            <label> <input type="checkbox" /> Remember Me </label>
-            <a href="#">Forgot Your Password</a>
+            <label>
+              <input type="checkbox" /> I accept all Terms & Conditions</label
+            >
           </div>
-          <button type="submit" class="btn btn-login">Login</button>
+          <button type="submit" class="btn btn-login">
+            Create New Account
+          </button>
         </form>
-        <a href="../signup/signup.html">Create New Account ></a>
+        <a href="../login/login.html">Already have an account ></a>
       </div>
     </section>
 
