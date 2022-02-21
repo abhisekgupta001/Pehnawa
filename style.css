@@ -10,6 +10,61 @@
     --linear-gradient-bg-light: linear-gradient(180deg, rgba(22, 21, 21,.1),rgba(22, 21, 21,.1));
 }
 
+
+
+/* /-----------hamburger styling ----------/ */
+.hamburger-icon{
+    font-size: 1.5rem;
+    color: var(--white);
+    display: none;
+}
+
+
+/* -----------vertical navigation for mobile---------- */
+.vertical-nav{
+    width: 300px;
+    min-height: 100%;
+    background-color: var(--white);
+    color: var(--navbar-bg-color);
+    font-size: 2rem;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    bottom: 0;
+    z-index: 3;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+
+    padding: 2rem 3rem;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 5rem;
+}
+
+.vertical-nav a{
+    color: var(--navbar-bg-color);
+    border-bottom: 2px solid transparent;
+}
+
+.vertical-nav a:hover{
+    border-bottom-color: var(--primary-color);
+}
+
+.vertical-nav .nav-search-container{
+    flex-grow: unset;
+}
+.vertical-nav .nav-search-label{
+    width: 100%;
+}
+.vertical-nav .nav-search-container .nav-search-bar{
+    border: 1px solid var(--navbar-bg-color);
+}
+
+.show-vertical-nav{
+    right: 0;
+    opacity: 1;
+}
+
 .profile-icon{
     position: relative;
 }
@@ -91,7 +146,7 @@
 /* ------------------gender card stylng------------ */
 .gender-cards-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .gender-card{
@@ -196,7 +251,7 @@
 
 .offer-card-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     grid-auto-rows: 200px;
     gap: 2rem;
     margin-top: 1rem;
@@ -313,6 +368,12 @@
         align-self: center;
     }
     .nav-items{
+        display: none;
+    }
+    .hamburger-icon{
+        display: inline-block;
+    }
+    .nav-search-main{
         display: none;
     }
 }
