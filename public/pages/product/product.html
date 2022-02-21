@@ -18,325 +18,394 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./product.css" />
-
   </head>
   <body>
     <!-- ======================Navigation Bar================ -->
     <header class="navbar" id="navbar">
       <nav class="nav-container-inline">
-          <div class="nav-logo-container">
-              <a href="../../../index.html" class="nav-logo">Pehnawa</a>
-            </div>
-            <div class="nav-search-container">
-                <label for="nav-search-bar" class="nav-search-label">
-                  <input type="text" id="nav-search-bar" class="nav-search-bar" placeholder="Search..." />           
-              <i class="bx bx-search-alt-2 nav-search-icon"></i>
-                </label>
-            </div>
-            <div class="nav-items">
-                <a href="../product/product.html">
-                    <p>Products</p>
-                </a>
-                <a href="../wishlist/wishlist.html">
-                    <i class="bx bx-bookmark-heart"></i>
-                </a>
+        <div class="nav-logo-container">
+          <a href="../../../index.html" class="nav-logo">Pehnawa</a>
+        </div>
+        <div class="nav-search-container">
+          <label for="nav-search-bar" class="nav-search-label">
+            <input
+              type="text"
+              id="nav-search-bar"
+              class="nav-search-bar"
+              placeholder="Search..."
+            />
+            <i class="bx bx-search-alt-2 nav-search-icon"></i>
+          </label>
+        </div>
+        <div class="nav-items">
+          <a href="../product/product.html">
+            <p>Products</p>
+          </a>
+          <a href="../wishlist/wishlist.html">
+            <i class="bx bx-bookmark-heart"></i>
+          </a>
           <a href="../cart/cart.html">
-                    <i class="bx bx-cart"></i>
-                </a>
+            <i class="bx bx-cart"></i>
+          </a>
           <a href="../profile/profile.html">
-                    <i class="bx bxs-user-circle "avatar avatar-circular"></i>
-                </a>
-            </div>
+            <i class="bx bxs-user-circle"></i>
+          </a>
+          <a href="../logout/logout.html">
+            <p>Logout</p>
+          </a>
+        </div>
       </nav>
     </header>
 
     <section class="product-container outer-container">
-        <!-- --------------left sidebar---------------->
-        <aside class="filter-sidebar flex-column-nowrap">
-            <div class="filters-wrapper flex-row-nowrap">
-                <h3 class="heading-4">Filters</h3>
-                <a href="#" class="btn-clear">Clear</a>
-            </div>
-            <div class="price-slider-wrapper">
-            
-              <h4 class="heading-4 slider-heading">Price</h4>
-              <div class="slider-wrapper">
-                <label class="slider-label">
-                  <span>100</span>
-                  <span>2000+</span>
-                </label>
-                <input class="slider-bar" type="range" name="slider" id="slider" min="100" max="2000" value="500" step="100" />  
-              </div>
-            </div>
-            <div class="gender-wrapper flex-column-nowrap">
-              <h3 class="heading-4">Gender</h3>
-              <label>
-                  <input type="checkbox" class="gender-checkbox" /> Men Clothing
-              </label>
-              <label>
-                  <input type="checkbox" class="gender-checkbox" /> Women Clothing
-              </label>
-          </div>
-            <div class="category-wrapper flex-column-nowrap">
-                <h3 class="heading-4">Category</h3>
-                <label>
-                    <input type="checkbox" class="category-checkbox" /> Shirts
-                </label>
-                <label>
-                    <input type="checkbox" class="category-checkbox" /> T-Shirts
-                </label>
-                <label>
-                  <input type="checkbox" class="category-checkbox" /> Jeans
-              </label>
-              <label>
-                <input type="checkbox" class="category-checkbox" /> Wallets
+      <!-- --------------left sidebar---------------->
+      <aside class="filter-sidebar flex-column-nowrap">
+        <div class="filters-wrapper flex-row-nowrap">
+          <h3 class="heading-4">Filters</h3>
+          <a href="#" class="btn-clear">Clear</a>
+        </div>
+        <div class="price-slider-wrapper">
+          <h4 class="heading-4 slider-heading">Price</h4>
+          <div class="slider-wrapper">
+            <label class="slider-label">
+              <span>100</span>
+              <span>2000+</span>
             </label>
-            <label>
-              <input type="checkbox" class="category-checkbox" /> Shoes
+            <input
+              class="slider-bar"
+              type="range"
+              name="slider"
+              id="slider"
+              min="100"
+              max="2000"
+              value="500"
+              step="100"
+            />
+          </div>
+        </div>
+        <div class="gender-wrapper flex-column-nowrap">
+          <h3 class="heading-4">Gender</h3>
+          <label>
+            <input type="checkbox" class="gender-checkbox" /> Men Clothing
           </label>
+          <label>
+            <input type="checkbox" class="gender-checkbox" /> Women Clothing
+          </label>
+        </div>
+        <div class="category-wrapper flex-column-nowrap">
+          <h3 class="heading-4">Category</h3>
+          <label>
+            <input type="checkbox" class="category-checkbox" /> Shirts
+          </label>
+          <label>
+            <input type="checkbox" class="category-checkbox" /> T-Shirts
+          </label>
+          <label>
+            <input type="checkbox" class="category-checkbox" /> Jeans
+          </label>
+          <label>
+            <input type="checkbox" class="category-checkbox" /> Wallets
+          </label>
+          <label>
+            <input type="checkbox" class="category-checkbox" /> Shoes
+          </label>
+        </div>
+        <div class="ratings-wrapper flex-column-nowrap">
+          <h3 class="heading-4">Rating</h3>
+          <label>
+            <input
+              type="radio"
+              class="filterbar-radio"
+              name="filter-star-radio"
+            />
+            4 start & above
+          </label>
+          <label>
+            <input
+              type="radio"
+              class="filterbar-radio"
+              name="filter-star-radio"
+            />
+            3 start & above
+          </label>
+          <label>
+            <input
+              type="radio"
+              class="filterbar-radio"
+              name="filter-star-radio"
+            />
+            2 start & above
+          </label>
+          <label>
+            <input
+              type="radio"
+              class="filterbar-radio"
+              name="filter-star-radio"
+            />
+            1 start & above
+          </label>
+        </div>
+        <div class="sort-wrapper flex-column-nowrap">
+          <h3 class="heading-4">Sort by</h3>
+          <label>
+            <input
+              type="radio"
+              class="filterbar-radio"
+              name="filter-sort-radio"
+            />
+            Price - Low to High
+          </label>
+          <label>
+            <input
+              type="radio"
+              class="filterbar-radio"
+              name="filter-sort-radio"
+            />
+            Price - High to Low
+          </label>
+        </div>
+      </aside>
+      <main class="product-page flex-column-nowrap">
+        <div class="product-heading-container flex-row-wrap">
+          <h3 class="heading-3">Showing All Products.</h3>
+          <p class="par-5">(20 products)</p>
+        </div>
+        <div class="product-card-grid">
+          <div class="product-card pehnawa-card flex-column-nowrap">
+            <i class="bx bx-heart-circle btn-wishlist"></i>
+            <div class="card-img-wrapper">
+              <img
+                src="../../images/product-image.webp"
+                alt="product card"
+                class="card-img"
+              />
             </div>
-            <div class="ratings-wrapper flex-column-nowrap">
-                <h3 class="heading-4">Rating</h3>
-                <label>
-                    <input type="radio" class="filterbar-radio" name="filter-star-radio"/> 4 start & above 
-                </label>
-                <label>
-                    <input type="radio" class="filterbar-radio" name="filter-star-radio"/> 3 start & above 
-                </label>
-                <label>
-                    <input type="radio" class="filterbar-radio" name="filter-star-radio"/> 2 start & above 
-                </label>
-                <label>
-                    <input type="radio" class="filterbar-radio" name="filter-star-radio"/> 1 start & above 
-                </label>
+            <div class="card-details-wrapper">
+              <div class="card-name-wrapper">
+                <h5 class="card-title">Roadster</h5>
+                <p class="card-subtitle">Men Casual Shirt</p>
+              </div>
+              <div class="card-price-wrapper">
+                <p class="card-price para-4">
+                  Rs. 599
+                  <span class="discount-price"> Rs. 1499</span>
+                  <span class="discount-percent"> (60% OFF)</span>
+                </p>
+              </div>
+              <div class="card-btns">
+                <button class="btn btn-add-to-cart">Add to Cart</button>
+              </div>
             </div>
-            <div class="sort-wrapper flex-column-nowrap">
-                <h3 class="heading-4">Sort by</h3>
-                <label>
-                    <input type="radio" class="filterbar-radio" name="filter-sort-radio"/> Price - Low to High
-                </label>
-                <label>
-                    <input type="radio" class="filterbar-radio" name="filter-sort-radio"/> Price - High to Low
-                </label>
-            </div>
-        </aside>
-        <main class="product-page flex-column-nowrap">
-          <div class="product-heading-container flex-row-wrap">
-            <h3 class="heading-3">Showing All Products.</h3>
-            <p class="par-5">(20 products)</p>
           </div>
-          <div class="product-card-grid ">
-            <div class="product-card pehnawa-card flex-column-nowrap">
-              <i class="bx bx-heart-circle btn-wishlist"></i>
-              <div class="card-img-wrapper">
-                  <img src="../../images/product-image.webp" alt="product card" class="card-img" />
-              </div>
-              <div class="card-details-wrapper">
+
+          <div class="product-card pehnawa-card flex-column-nowrap">
+            <i class="bx bx-heart-circle btn-wishlist"></i>
+            <div class="card-img-wrapper">
+              <img
+                src="../../images/shirt-2.webp"
+                alt="product card"
+                class="card-img"
+              />
+            </div>
+            <div class="card-details-wrapper">
               <div class="card-name-wrapper">
-                  <h5 class="card-title">Roadster</h5>
-                  <p class="card-subtitle">Men Casual Shirt</p>
+                <h5 class="card-title">Highlander</h5>
+                <p class="card-subtitle">Men Casual Shirt</p>
               </div>
               <div class="card-price-wrapper">
-                  <p class="card-price para-4">Rs. 599
-                    <span class="discount-price"> Rs. 1499</span>
-                    <span class="discount-percent"> (60% OFF)</span>
-                    </p>
+                <p class="card-price para-4">
+                  Rs. 799
+                  <span class="discount-price"> Rs. 1599</span>
+                  <span class="discount-percent"> (50% OFF)</span>
+                </p>
               </div>
               <div class="card-btns">
                 <button class="btn btn-add-to-cart">Add to Cart</button>
               </div>
             </div>
-            </div>
-
-            <div class="product-card pehnawa-card flex-column-nowrap">
-              <i class="bx bx-heart-circle btn-wishlist"></i>
-              <div class="card-img-wrapper">
-                  <img src="../../images/shirt-2.webp" alt="product card" class="card-img" />
-              </div>
-              <div class="card-details-wrapper">
-              <div class="card-name-wrapper">
-                  <h5 class="card-title">Highlander</h5>
-                  <p class="card-subtitle">Men Casual Shirt</p>
-              </div>
-              <div class="card-price-wrapper">
-                  <p class="card-price para-4">Rs. 799
-                    <span class="discount-price"> Rs. 1599</span>
-                    <span class="discount-percent"> (50% OFF)</span>
-                    </p>
-              </div>
-              <div class="card-btns">
-                <button class="btn btn-add-to-cart">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-            <div class="product-card pehnawa-card flex-column-nowrap">
-              <i class="bx bx-heart-circle btn-wishlist"></i>
-              <div class="card-img-wrapper">
-                  <img src="../../images/shirt-3.webp" alt="product card" class="card-img" />
-              </div>
-              <div class="card-details-wrapper">
-              <div class="card-name-wrapper">
-                  <h5 class="card-title">Flying Machine</h5>
-                  <p class="card-subtitle">Men Casual Shirt</p>
-              </div>
-              <div class="card-price-wrapper">
-                  <p class="card-price para-4">Rs. 999
-                    <span class="discount-price"> Rs. 1999</span>
-                    <span class="discount-percent"> (50% OFF)</span>
-                    </p>
-              </div>
-              <div class="card-btns">
-                <button class="btn btn-add-to-cart">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-
-            <div class="product-card pehnawa-card flex-column-nowrap">
-              <i class="bx bx-heart-circle btn-wishlist"></i>
-              <div class="card-img-wrapper">
-                  <img src="../../images/tshirt1.webp" alt="product card" class="card-img" />
-              </div>
-              <div class="card-details-wrapper">
-              <div class="card-name-wrapper">
-                  <h5 class="card-title">Ether</h5>
-                  <p class="card-subtitle">Men Solid T-Shirt</p>
-              </div>
-              <div class="card-price-wrapper">
-                  <p class="card-price para-4">Rs. 599
-                    <span class="discount-price"> Rs. 1499</span>
-                    <span class="discount-percent"> (60% OFF)</span>
-                    </p>
-              </div>
-              <div class="card-btns">
-                <button class="btn btn-add-to-cart">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-
-            <div class="product-card pehnawa-card flex-column-nowrap">
-              <i class="bx bx-heart-circle btn-wishlist"></i>
-              <div class="card-img-wrapper">
-                  <img src="../../images/tshirt2.webp" alt="product card" class="card-img" />
-              </div>
-              <div class="card-details-wrapper">
-              <div class="card-name-wrapper">
-                  <h5 class="card-title">Roadster</h5>
-                  <p class="card-subtitle">Men Solid T-Shirt</p>
-              </div>
-              <div class="card-price-wrapper">
-                  <p class="card-price para-4">Rs. 399
-                    <span class="discount-price"> Rs. 999</span>
-                    <span class="discount-percent"> (60% OFF)</span>
-                    </p>
-              </div>
-              <div class="card-btns">
-                <button class="btn btn-add-to-cart">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-
-            <div class="product-card pehnawa-card flex-column-nowrap">
-              <i class="bx bx-heart-circle btn-wishlist"></i>
-              <div class="card-img-wrapper">
-                  <img src="../../images/tshirt3.webp" alt="product card" class="card-img" />
-              </div>
-              <div class="card-details-wrapper">
-              <div class="card-name-wrapper">
-                  <h5 class="card-title">Zara</h5>
-                  <p class="card-subtitle">Women Casual T-Shirt</p>
-              </div>
-              <div class="card-price-wrapper">
-                  <p class="card-price para-4">Rs. 799
-                    <span class="discount-price"> Rs. 1599</span>
-                    <span class="discount-percent"> (50% OFF)</span>
-                    </p>
-              </div>
-              <div class="card-btns">
-                <button class="btn btn-add-to-cart">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-
-            <div class="product-card pehnawa-card flex-column-nowrap">
-              <i class="bx bx-heart-circle btn-wishlist"></i>
-              <div class="card-img-wrapper">
-                  <img src="../../images/tshirt4.webp" alt="product card" class="card-img" />
-              </div>
-              <div class="card-details-wrapper">
-              <div class="card-name-wrapper">
-                  <h5 class="card-title">DressBerry</h5>
-                  <p class="card-subtitle">Women Casual T-Shirt</p>
-              </div>
-              <div class="card-price-wrapper">
-                  <p class="card-price para-4">Rs. 399
-                    <span class="discount-price"> Rs. 999</span>
-                    <span class="discount-percent"> (60% OFF)</span>
-                    </p>
-              </div>
-              <div class="card-btns">
-                <button class="btn btn-add-to-cart">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-            
           </div>
-          
 
-        </main>
+          <div class="product-card pehnawa-card flex-column-nowrap">
+            <i class="bx bx-heart-circle btn-wishlist"></i>
+            <div class="card-img-wrapper">
+              <img
+                src="../../images/shirt-3.webp"
+                alt="product card"
+                class="card-img"
+              />
+            </div>
+            <div class="card-details-wrapper">
+              <div class="card-name-wrapper">
+                <h5 class="card-title">Flying Machine</h5>
+                <p class="card-subtitle">Men Casual Shirt</p>
+              </div>
+              <div class="card-price-wrapper">
+                <p class="card-price para-4">
+                  Rs. 999
+                  <span class="discount-price"> Rs. 1999</span>
+                  <span class="discount-percent"> (50% OFF)</span>
+                </p>
+              </div>
+              <div class="card-btns">
+                <button class="btn btn-add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card pehnawa-card flex-column-nowrap">
+            <i class="bx bx-heart-circle btn-wishlist"></i>
+            <div class="card-img-wrapper">
+              <img
+                src="../../images/tshirt1.webp"
+                alt="product card"
+                class="card-img"
+              />
+            </div>
+            <div class="card-details-wrapper">
+              <div class="card-name-wrapper">
+                <h5 class="card-title">Ether</h5>
+                <p class="card-subtitle">Men Solid T-Shirt</p>
+              </div>
+              <div class="card-price-wrapper">
+                <p class="card-price para-4">
+                  Rs. 599
+                  <span class="discount-price"> Rs. 1499</span>
+                  <span class="discount-percent"> (60% OFF)</span>
+                </p>
+              </div>
+              <div class="card-btns">
+                <button class="btn btn-add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card pehnawa-card flex-column-nowrap">
+            <i class="bx bx-heart-circle btn-wishlist"></i>
+            <div class="card-img-wrapper">
+              <img
+                src="../../images/tshirt2.webp"
+                alt="product card"
+                class="card-img"
+              />
+            </div>
+            <div class="card-details-wrapper">
+              <div class="card-name-wrapper">
+                <h5 class="card-title">Roadster</h5>
+                <p class="card-subtitle">Men Solid T-Shirt</p>
+              </div>
+              <div class="card-price-wrapper">
+                <p class="card-price para-4">
+                  Rs. 399
+                  <span class="discount-price"> Rs. 999</span>
+                  <span class="discount-percent"> (60% OFF)</span>
+                </p>
+              </div>
+              <div class="card-btns">
+                <button class="btn btn-add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card pehnawa-card flex-column-nowrap">
+            <i class="bx bx-heart-circle btn-wishlist"></i>
+            <div class="card-img-wrapper">
+              <img
+                src="../../images/tshirt3.webp"
+                alt="product card"
+                class="card-img"
+              />
+            </div>
+            <div class="card-details-wrapper">
+              <div class="card-name-wrapper">
+                <h5 class="card-title">Zara</h5>
+                <p class="card-subtitle">Women Casual T-Shirt</p>
+              </div>
+              <div class="card-price-wrapper">
+                <p class="card-price para-4">
+                  Rs. 799
+                  <span class="discount-price"> Rs. 1599</span>
+                  <span class="discount-percent"> (50% OFF)</span>
+                </p>
+              </div>
+              <div class="card-btns">
+                <button class="btn btn-add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card pehnawa-card flex-column-nowrap">
+            <i class="bx bx-heart-circle btn-wishlist"></i>
+            <div class="card-img-wrapper">
+              <img
+                src="../../images/tshirt4.webp"
+                alt="product card"
+                class="card-img"
+              />
+            </div>
+            <div class="card-details-wrapper">
+              <div class="card-name-wrapper">
+                <h5 class="card-title">DressBerry</h5>
+                <p class="card-subtitle">Women Casual T-Shirt</p>
+              </div>
+              <div class="card-price-wrapper">
+                <p class="card-price para-4">
+                  Rs. 399
+                  <span class="discount-price"> Rs. 999</span>
+                  <span class="discount-percent"> (60% OFF)</span>
+                </p>
+              </div>
+              <div class="card-btns">
+                <button class="btn btn-add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </section>
-    
-
-
-
-
-
 
     <footer class="footer-section outer-container">
       <div class="footer-container container flex-row-wrap">
-        <div >
+        <div>
           <a href="#" class="brand nav-logo">Pehnawa</a>
           <p class="para-4 footer-heading">Get In Touch</p>
-          <ul class="social-column ">
-          <li><a href="#" target="_blank">Facebook</a></li>
-          <li><a href="#" target="_blank">Instagram</a></li>
-          <li><a href="#" target="_blank">Twitter</a></li>
-        </ul>
+          <ul class="social-column">
+            <li><a href="#" target="_blank">Facebook</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+          </ul>
         </div>
         <div>
           <p class="para-4 footer-heading">Categories</p>
           <ul class="category-column">
-          <li><a href="#" target="_blank">Shirts</a></li>
-          <li><a href="#" target="_blank">T-Shirts</a></li>
-          <li><a href="#" target="_blank">Jeans</a></li>
-          <li><a href="#" target="_blank">Wallets</a></li>
-          <li><a href="#" target="_blank">Shoes</a></li>
-        </ul>
+            <li><a href="#" target="_blank">Shirts</a></li>
+            <li><a href="#" target="_blank">T-Shirts</a></li>
+            <li><a href="#" target="_blank">Jeans</a></li>
+            <li><a href="#" target="_blank">Wallets</a></li>
+            <li><a href="#" target="_blank">Shoes</a></li>
+          </ul>
         </div>
         <div class="useful-links">
           <p class="para-4 footer-heading">Contact us</p>
           <ul class="contact-column">
-          <li><a href="#" target="_blank">Ph.no.: 987-654-3210</a></li>
-          <li><a href="#" target="_blank">Email: pehnawa@gmail.com</a></li>
-          <li><a href="#" target="_blank">Address: 34/H, Sector 32, <br> Noida, Uttar Pradesh </a></li>
-        </ul>
+            <li><a href="#" target="_blank">Ph.no.: 987-654-3210</a></li>
+            <li><a href="#" target="_blank">Email: pehnawa@gmail.com</a></li>
+            <li>
+              <a href="#" target="_blank"
+                >Address: 34/H, Sector 32, <br />
+                Noida, Uttar Pradesh
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="scroll-to-top">
           <a href="#navbar">
-            <i class='bx bx-arrow-to-top bx-flashing scroll-to-top'></i>
+            <i class="bx bx-arrow-to-top bx-flashing scroll-to-top"></i>
             <p class="para-4">Scroll to Top</p>
           </a>
         </div>
       </div>
-
     </footer>
 
-
-   
     <!-- ======================LINKING THE JS FILE================ -->
     <script src="https://purplebrick.netlify.app/public/main.js"></script>
     <script src="./script.js"></script>
