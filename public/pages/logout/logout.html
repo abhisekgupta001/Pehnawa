@@ -24,39 +24,62 @@
     <!-- ======================Navigation Bar================ -->
     <header class="navbar" id="navbar">
       <nav class="nav-container-inline">
-        <div class="nav-logo-container">
-          <a href="../../../index.html" class="nav-logo">Pehnawa</a>
-        </div>
-        <div class="nav-search-container">
-          <label for="nav-search-bar" class="nav-search-label">
-            <input
-              type="text"
-              id="nav-search-bar"
-              class="nav-search-bar"
-              placeholder="Search..."
-            />
-            <i class="bx bx-search-alt-2 nav-search-icon"></i>
-          </label>
-        </div>
-        <div class="nav-items">
-          <a href="../product/product.html">
-            <p>Products</p>
-          </a>
-          <a href="../wishlist/wishlist.html">
-            <i class="bx bx-bookmark-heart"></i>
-          </a>
-          <a href="../cart/cart.html">
-            <i class="bx bx-cart"></i>
-          </a>
-          <a href="../profile/profile.html">
-            <i class="bx bxs-user-circle"></i>
-          </a>
-          <a href="../login/login.html">
-            <p>Login</p>
-          </a>
-        </div>
+          <div class="nav-logo-container">
+              <a href="./index.html" class="nav-logo">Pehnawa</a>
+            </div>
+            <div class="nav-search-container nav-search-main">
+                <label for="nav-search-bar" class="nav-search-label">
+                  <input type="text" id="nav-search-bar" class="nav-search-bar" placeholder="Search..." />           
+              <i class="bx bx-search-alt-2 nav-search-icon"></i>
+                </label>
+            </div>
+            <div class="hamburger-container">
+              <i class="bx bx-grid-alt hamburger-icon"></i>
+            </div>
+            <div class="nav-items">
+              <a href="../product/product.html">
+                <p>Products</p>
+              </a>
+              <a href="../wishlist/wishlist.html">
+                <i class="bx bx-bookmark-heart"></i>
+              </a>
+              <a href="../cart/cart.html">
+                <i class="bx bx-cart"></i>
+              </a>
+              <a href="../profile/profile.html">
+                <i class="bx bxs-user-circle "avatar avatar-circular"></i>
+              </a>
+              <a href="../login/login.html">
+                <p>Login</p>
+              </a>
+            </div>
+            
       </nav>
     </header>
+    <div class="vertical-nav flex-column-nowrap">
+      <i class='bx bxs-x-circle close-vertical-btn'></i>
+      <div class="nav-search-container">
+        <label for="nav-search-bar" class="nav-search-label">
+          <input type="text" id="nav-search-bar" class="nav-search-bar" placeholder="Search" />           
+          <i class="bx bx-search-alt-2 nav-search-icon"></i>
+        </label>
+      </div>
+      <a href="../product/product.html">
+        Products <i class='bx bxs-t-shirt' ></i> 
+      </a>
+      <a href="../wishlist/wishlist.html">
+        Wishlist <i class="bx bxs-bookmark-heart"></i> 
+      </a>
+      <a href="../cart/cart.html">
+        Cart <i class="bx bxs-cart"></i> 
+      </a>
+      <a href="../profile/profile.html">
+        Profile <i class="bx bxs-user-circle "avatar avatar-circular"></i> 
+      </a>
+      <a href="../login/login.html">
+        Login <i class='bx bxs-log-in' ></i> 
+      </a>
+    </div>
 
     <section class="login-card-container outer-container">
       <div class="login-card flex-column-nowrap logout-card">
@@ -113,6 +136,6 @@
 
     <!-- ======================LINKING THE JS FILE================ -->
     <script src="https://purplebrick.netlify.app/public/main.js"></script>
-    <script src="./script.js"></script>
+    <script src="../../../script.js"></script>
   </body>
 </html>

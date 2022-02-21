@@ -137,6 +137,22 @@
 }
 
 
+.coupon-wrapper .coupon-input{
+    padding:.2rem .5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.coupon-wrapper .btn-apply-coupon{
+    color: var(--navbar-bg-color);
+    padding: .4rem 1rem;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+.coupon-wrapper .btn-apply-coupon:hover{
+    transform: scale(.9);
+}
+
 
 /* -------Removing arrow from input type number ------ */
 /* Chrome, Safari, Edge, Opera */
