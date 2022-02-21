@@ -1,0 +1,9 @@
+@import url(../../../style.css);
+
+.logout-card{
+    padding-block: 3rem;
+}
+
+.logout-card .bx-check-circle{
+    font-size: 2rem;
+}
