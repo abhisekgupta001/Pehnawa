@@ -63,3 +63,13 @@
     padding: .5rem 1rem;
     border-radius: 0;
 }
+
+@media screen and (max-width:600px){
+    .login-card{
+        width: 90%;
+    }
+    .login-card > *{
+        width: 100%;
+        text-align: center;
+    }
+}
